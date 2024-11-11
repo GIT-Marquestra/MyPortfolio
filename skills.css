@@ -81,11 +81,18 @@ nav .cont{
 }
 
 .link-group a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .link-group a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
     text-decoration: none;
     font-size: 18px;
 }
