@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: black;
+} */
+
+body {
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    font-family: Arial, sans-serif;
+    
+}
+
+.container{
+    /* border: 1px solid red; */
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1{
+    /* border: 2px solid red; */
+    height: 300px;
+    width: 700px;
+    /* background-color: rgb(7, 7, 7); */
+    position: relative;
+    top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("images/Black and blue abstract background.jpeg"); */
+}
+
+.content1 .tex1{
+    font-size: 40px;
+    margin: 2px;
+    font-weight: bold;
+}
+.content1 .tex2{
+    font-size: 90px;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.content1 .tex2 .two{
+    color: rgb(17, 120, 255);
+}
+
+.content1 .para{
+    width: 500px;
+    /* border: 2px solid white; */
+    position: relative;
+    top: 30px;
+    font-weight: 0;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.content1 .para p{
+    position: relative;
+    left: 15px;
+}
+
+
+.content2{
+    /* border: 2px solid red; */
+    height: 300px;
+    width: 600px;
+    /* background-color: rgb(7, 7, 7); */
+    position: relative;
+    top: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("images/Black and blue abstract background.jpeg"); */
+}
+.content2 .texCont{
+    /* border: 2px solid white; */
+    display: flex;
+    height: 250px;
+    width: 350px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 20px;
+}
+
+.content2 .tex1{
+    /* border: 2px solid red; */
+    /* height: 50px; */
+    width: 300px;
+    margin: 25px;
+    font-size: 20px;
+}
+.content2 .tex2{
+    /* border: 2px solid red; */
+    /* height: 50px; */
+    width: 300px;
+    margin: 25px;
+    font-size: 20px;
+}
+
+
+.content2 .profileImage{
+    margin: 70px;
+}
+
+.content2 .profileImage img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.content3{
+    /* border: 2px solid red; */
+    position: relative;
+    top: 250px;
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content3 .profileImage{
+    /* border: 2px solid red; */
+    margin: 50px;   
+}
+
+.content3 .texCont{
+    margin: 50px;
+    /* border: 2px solid red; */
+    font-size: 20px;
+
+}
+
+.content3 .profileImage img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* border: 2px solid red; */
+    /* height: 300px; */
+}
+nav .cont{
+    border: 0.8px solid grey;
+    border-radius: 10px;
+    width: 900px;
+    height: 80px;
+    position: fixed;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    color: white;              
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+
+.navbar-links{
+    display: flex;
+
+}
+
+.link-group{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    
+}
+
+.navbar-links .link-group img{
+    width: 25px;
+}
+
+.navbar-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.link-group a:hover {
+    text-decoration: none;
+}
+
+.link-group a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content4{
+    /* border: 2px solid red; */
+    height: 80px;
+    width: 800px;
+    position: relative;
+    top: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.content4 .insta img{
+    height: 70px;
+    margin-left: 70px;
+}
+
+.content4 .x img{
+    height: 50px;
+    margin-left: 70px;
+}
+.content4 .lin img{
+    height: 40px;
+    margin-left: 70px;
+}
+.content4 .github img{
+    height: 40px;
+    margin-left: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.glow-box {
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    /* box-shadow: 0 0 15px rgba(0, 0, 139, 0.6), 0 0 30px rgba(0, 0, 139, 0.4), 0 0 45px rgba(0, 0, 139, 0.2); */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Glow effect on hover */
+.glow-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 139, 0.8), 0 0 40px rgba(0, 0, 139, 0.6), 0 0 60px rgba(0, 0, 139, 0.4);
+}
+
+/* Text styling within the glow box */
+.glow-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.glow-box p {
+    font-size: 16px;
+}
+
+.glass-effect {
+    width: 700px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    color: #fff;
+    text-align: center;
+}
+
+.button-div {
+    background: #fffefe; 
+    /* padding: 8px; */
+    /* margin: 8px; */
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.button-link {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+
+.button-div:hover {
+    /* transform: translateY(-1px);  */
+    box-shadow: 0 2px 20px rgba(245, 245, 247, 0.8); 
+}
+
+
+.button-div:active {
+    transform: translateY(1px); 
+    box-shadow: 0 2px 2px rgba(100, 149, 237, 0.6); 
+}
+
+.profileImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow-img {
+    width: 150px; /* Set width as per your needs */
+    height: 150px; /* Set height to match width for a circle */
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 0 20px 5px rgb(116, 82, 36); /* Glow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Optional: Intensify glow on hover */
+.glow-img:hover {
+    box-shadow: 0 0 30px 10px rgb(95, 71, 38);
+}
+
+.scroll-appear {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below the viewport */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    /* background-color: red; */
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+/* Class to apply when the element is in view */
+.scroll-appear.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
