@@ -8,16 +8,7 @@
     background-color: black;
 } */
 
-body {
-    /* display: flex; */
-    /* justify-content: center; */
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(7, 7, 7);
-    color: white;
-    font-family: Arial, sans-serif;
-    
-}
+
 
 .container{
     /* border: 1px solid red; */
@@ -257,6 +248,62 @@ nav .cont{
     margin-left: 70px;
 }
 
+
+body {
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    
+}
+
+.containerr {
+    transform-style: preserve-3d;
+    width: 150px;
+    height: 100px;
+    position: absolute; /* For absolute positioning of the ray */
+    top: 0px;
+}
+
+.ray {
+    position: absolute;
+    width: 950px; 
+    height: 70%; 
+    /* background: rgba(0, 0, 255, 0.3621);  */
+    border-radius: 20px; /* Rounded edges for a cylindrical effect */
+    offset-position: 250px;
+    offset-path: ray(120deg farthest-corner); /* Follows the same path as shape 5 */
+    animation: move 5000ms 1 alternate ease-in-out;
+    box-shadow: 80px 0 100px 68px rgba(0, 0, 255, 0.309), 40px 0 100px 60px rgba(0, 0, 255, 0.285) inset;  /* Further blurred shadow for more blending */
+    mix-blend-mode: screen; 
+}
+
+@media only screen and (max-width:1500px){
+    .ray{
+        offset-position: -10px;
+    }
+
+}
+@media only screen and (max-width:768px){
+    .ray{
+        offset-position: -70px;
+
+    }
+
+}
+
+@keyframes move {
+    0%, 20% {
+        offset-distance: -300%;
+    }
+    80%, 100% {
+        offset-distance: 0%;
+    }
+}
 
 
 
